@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Web Page with Floating Articles</title>
+  <style>
+    /* Global styles */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: rgb(227,70, 229);
+}
+
+
+/* Header styles */
+
+header {
+  padding: 1rem;
+}
+
+/* Main styles */
+
+main {
+  padding: 1rem;
+}
+
+/* Floating article styles */
+
+.floating-article {
+    display: inline-block;
+  
+  width: 25%;
+  height: 85px;
+  margin: 0 1rem 1rem 0;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  overflow-y: hidden;
+}
+.floating2-article{
+    height: 50px;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+overflow-y: scroll;
+font-weight: bold;
+}
+/* Responsive styles */
+
+@media (max-width: 800px) {
+  .floating-article {
+    width: 50%;
+    margin: 0 1rem 1rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .floating-article {
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Responsive Web Page with Floating Articles</h1>
+  </header>
+
+  <main>
+    <article class="floating-article">
+      
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ratione consequuntur a
+        reiciendis,
+        error in magni inventore sequi deleniti rem incidunt, maiores architecto tenetur doloremque quod molestiae
+        vel</p>
+    </article>
+
+    <article class="floating-article">
+      
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ratione consequuntur a
+        reiciendis,
+        error in magni inventore sequi deleniti rem incidunt, maiores architecto tenetur doloremque quod molestiae
+        vel</p>
+    </article>
+
+    <article class="floating-article">
+      
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ratione consequuntur a
+        reiciendis,
+        error in magni inventore sequi deleniti rem incidunt, maiores architecto tenetur doloremque quod molestiae
+        vel</p>
+    </article>
+    <article class="floating2-article">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem laboriosam et magni dignissimos,
+            veritatis molestias recusandae numquam quibusdam quisquam vero similique minus at vitae quis minima modi.
+            Ea, eveniet quasi eum expedita accusantium illum eos delectus placeat nisi laboriosam aspernatur, quo vero
+            doloremque iste recusandae, culpa asperiores! Non blanditiis doloremque numquam molestiae hic corporis
+            eligendi optio commodi, dolores sint sunt quis neque minus quidem dolorem pariatur! Quasi aliquid quod,
+            maxime explicabo perspiciatis distinctio libero beatae vero tenetur dolorem laboriosam eum.</p>
+    </article>
+    <article class="floating-article">
+      
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ratione consequuntur a
+          reiciendis,
+          error in magni inventore sequi deleniti rem incidunt, maiores architecto tenetur doloremque quod molestiae
+          vel</p>
+      </article>
+      <article class="floating-article">
+      
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ratione consequuntur a
+          reiciendis,
+          error in magni inventore sequi deleniti rem incidunt, maiores architecto tenetur doloremque quod molestiae
+          vel</p>
+      </article>
+  </main>
+
+ 
+
+</body>
+</html>
